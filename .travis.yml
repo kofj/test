@@ -4,4 +4,4 @@ go:
 install:
   - mv $HOME/gopath/src/github.com/kofj/test $HOME/gopath/src
   - cd $HOME/gopath/src/test
-  - go install web
+  - go install ./web
