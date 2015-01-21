@@ -2,8 +2,6 @@ language: go
 go:
   - 1.4
 install:
-  - pwd && ls -al
-  - cat web/routers/router.go 
-  - ls -al $HOME/gopath/
-  - ls -al $HOME/gopath/bin
-  - ls -al $HOME/gopath/src
+  - mv $HOME/gopath/src/github.com/kofj/test $HOME/gopath/src
+  - cd $HOME/gopath/src/test
+  - go install web
